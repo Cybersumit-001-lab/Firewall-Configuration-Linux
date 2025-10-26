@@ -1,0 +1,62 @@
+🔍 How a Firewall Filters Traffic
+
+A firewall is like a security guard for your computer or network.
+It controls which data packets (small pieces of information sent over the internet) are allowed in or out of your system.
+
+🧠 How It Works
+
+1.Packet Inspection
+
+      ● Every time data tries to enter or leave your system, the firewall checks it.
+
+      ● It looks at:
+
+          ●  Source IP (where it came from)
+
+          ●  Destination IP (where it’s going)
+
+          ●  Port number (which service or app it’s for, like 22 for SSH, 80 for HTTP)
+
+          ●  Protocol (TCP, UDP, etc.)
+
+2.Rule Matching
+
+      ● The firewall has a list of rules — for example:
+
+         ● “Allow SSH on port 22”
+
+         ● “Block Telnet on port 23”
+
+      ● Each packet is compared to these rules.
+
+3.Decision Making
+
+      ● If a packet matches an “allow” rule, it passes through.
+
+      ● If it matches a “deny” rule, it is blocked or dropped.
+
+4.Logging
+
+      ● Firewalls can log allowed and blocked packets.
+
+      ● These logs help system administrators see what traffic is happening and detect attacks.
+
+🧱 Types of Firewalls
+
+● Packet Filtering Firewall – Checks IP, port, and protocol only.
+
+● Stateful Firewall – Tracks active connections; more secure.
+
+● Application Firewall – Filters specific app traffic (like web traffic, FTP, etc.).
+
+⚙️ Example with Linux UFW
+sudo ufw deny 23   # Blocks Telnet traffic
+sudo ufw allow 22  # Allows SSH traffic
+
+
+These rules control what kind of connections are permitted to your system.
+
+✅ Conclusion
+
+A firewall filters traffic by allowing trusted communication and blocking suspicious or unwanted connections.
+It helps protect your system from hackers, malware, and unauthorized access by acting as a barrier between your computer and the internet.
