@@ -79,5 +79,5 @@ This demonstrates how firewalls control access and secure systems from unauthori
 
 ## 👤 Author
 **Sumit Kumar Ram**  
-BCA 2nd Year, ABS Academy of Science, Technology & Management  
+BCA 3rd Year, ABS Academy of Science, Technology & Management  
 Cybersecurity Enthusiast ⚡
