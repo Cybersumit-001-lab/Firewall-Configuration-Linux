@@ -1,0 +1,17 @@
+# Check UFW status
+sudo ufw status
+
+# Enable UFW if inactive
+sudo ufw enable
+
+# Block inbound traffic on port 23 (Telnet)
+sudo ufw deny 23
+
+# Allow SSH access on port 22
+sudo ufw allow 22
+
+# Delete the block rule for port 23
+sudo ufw delete deny 23
+
+# Show detailed firewall status
+sudo ufw status verbose
